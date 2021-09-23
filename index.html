@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>ORCA Talk</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/white.css" id="theme">
+        <link rel="stylesheet" href="plugin/highlight/monokai.css">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                <section data-auto-animate>
+                    <span class="menu-title" style="display: none">Overview</span>
+                    <h3 class="r-fit-text">Towards the Accountable Learning-enabled Autonomous Systems</h3>
+                        <p class="name fragment" data-fragment-index="1" style="color: blue;"> Research Question: Is Deep Learning secure for Robots?</p>
+                        <div class="r-vstack">
+                        <img src="images/orca.jpg" class="logo">
+                        <ul class="agenda">
+                            <li class="fragment">Background</li>
+                            <li class="fragment">Project 1: Adversarial Driving
+                            <li class="fragment">Project 2: Adversarial Detection</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- <img src="images/wuhanstudio.jpg" class="wuhanstudio"> -->
+                        <p class="name">Han Wu &nbsp;<i class="fab fa-github"></i>&nbsp; <a href="https://github.com/wuhanstudio/">@wuhanstudio</a></p>
+                        <p class="name">Ph.D. Student at the University of Exeter, in the U.K.</p>
+                    </div>
+                    
+                    <aside class="notes">
+                        Hi, I'm a PhD student at the University of Exeter, in the U.K. Here's my github username. I would like to introduce Robot Operating System, or ROS on RT-Thread, because my current research focuses on deep learning security for robots, that tries to seek the answer for the question: Is Deep Learning secure for Robots? In recent years, we see quite a lot of deep learning applications in robotics, such as object detection for autonomous driving. But here's the problem, what if deep learning models are vulnerable to adversarial attacks, which means neural networks can make wrong or even rediculous predictions once under attack, and I'll give a demonstration in the next slide. The demo project is implemented using Robot Operating System or ROS. So first, I'll give you a brief introduction to ROS ... How to communicate with ROS on RT-Thread. At last.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Background</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="" style="font-size: 35px;">Intelligent Robots: Deep Learning in Robotics</p>
+                    <img src="images/amazon_alibaba.png" style="width: 65%;" alt="">
+                    <span class="fragment r-fit-text">Intelligent robots possess a more comprehensive perception of environments.</span>
+                    <div class="fragment r-vstack">
+                        <img src="images/autonomous.png" style="width: 65%;" alt="">
+                        <span class="" style="font-size: 28px;">Deep Learning for Autonomous Driving</span>
+                    </div>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="r-fit-text">Deep neural networks are vulnerable to adversarial attacks in various tasks.</p>
+                    <img src="images/fgsm.png" alt="">
+                    <p class="fragment r-fit-text">Instead of minimizing the loss function, the adversarial attack maximizes it.</p>
+                    <div class="fragment r-vstack">
+                        <img src="images/detection.png" alt="">
+                        <span class="" style="font-size: 28px;">Adversarial attacks against object detection.</span>
+                    </div>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-background-video="images/fake_camera.mp4" 
+                data-background-video-loop data-background-video-muted>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-background="images/overview.png">
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Project 1: Adversarial Driving</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-background="images/driving.png">
+                    <aside class="notes">
+                    </aside>
+                </section>
+    
+                <section>
+                    <h2>Project 2: Adversarial Detection</h2>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-background-video="images/detection.mp4" 
+                data-background-video-loop data-background-video-muted>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-background-video="images/detection_tb3.mp4" 
+                data-background-video-loop data-background-video-muted>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section data-auto-animate>
+                    <div class="r-vstack">
+                        <p>Deep Learning Models are differentiable</p>
+                        <img src="images/forward.jpg">
+                        <img src="images/backward.jpg" class="fragment">
+                        <img src="images/gradient.jpg" class="fragment">
+                    </div>
+                </section>
+
+                <section data-auto-animate data-auto-animate-unmatched="fade">
+                    <div class="r-vstack">
+                        <p>Deep Learning Models are differentiable</p>
+                        <img src="images/gradient.jpg" width="90%">
+                        <img src="images/step1.jpg" class="fragment">
+                        <img src="images/step2.jpg" class="fragment">
+                        <img src="images/step3.jpg" class="fragment">
+                    </div>
+                </section>
+
+                <section data-auto-animate data-auto-animate-unmatched="fade">
+                    <div class="r-vstack">
+                        <p>Deep Learning Models are differentiable</p>
+                        <img src="images/step4.jpg">
+                    </div>
+                    <div class="r-hstack fragment">
+                        <div class="r-vstack">
+                            <img src="images/one_target.jpg" width="80%" style="margin-right: 5%;">
+                            <p style="font-size: 18px;">One Targeted Attack</p>
+                        </div>
+                        <div class="r-vstack">
+                            <img src="images/multi_target.jpg" width="80%" style="margin-right: 5%;">
+                            <p style="font-size: 18px;">Multi Targeted Attack</p>
+                        </div>
+                        <div class="r-vstack">
+                            <img src="images/multi_untarget.jpg" width="80%" style="margin-right: 5%;">
+                            <p style="font-size: 18px;">Multi Untargeted Attack</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate data-auto-animate-unmatched="fade">
+                    <h2 class="r-fit-text">Adversarial Detection: One Targeted Attack</h2>
+                    <p style="font-size: 20px;">
+                        $$J_1(x, \delta, y_h) = max(\ \sigma(c) * \sigma(p_0) \ )$$
+                    </p>
+                    <pre data-id="code">
+                        <code class="python" data-trim data-line-numbers>
+                            # One Targeted Attack
+                            loss = K.max(K.sigmoid(K.reshape(out, (-1, 8))[:, 4]) * K.sigmoid(K.reshape(out, (-1, 8))[:, 5]))
+                            
+                            grads = K.gradients(loss, self.model.input)
+                        </code>
+                    </pre>
+                    <div class="r-hstack">
+                        <img src="images/one_target.jpg" width="30%" style="margin-right: 20%;">
+                        <img src="images/y.jpg">
+                    </div>
+                </section>
+
+                <section data-auto-animate data-auto-animate-unmatched="fade">
+                    <h2 class="r-fit-text">Adversarial Detection: Multi Targeted Attack</h2>
+                    <p style="color: #CCC; font-size: 20px;">
+                        $$J_1(x, \delta, y_h) = max(\ \sigma(c) * \sigma(p_0) \ )$$
+                    </p>
+                    <p style="font-size: 20px;">
+                        $$J_2(x, \delta, y_h) = \sigma(c) * \sigma(p_0)$$
+                    </p>
+                    <pre data-id="code">
+                        <code class="python" data-trim data-line-numbers>
+                        # Multi Targeted Attack
+                        loss = K.sigmoid(K.reshape(out, (-1, 8))[:, 4]) * K.sigmoid(K.reshape(out, (-1, 8))[:, 5])
+
+                        grads = K.gradients(loss, self.model.input)
+                        </code>
+                    </pre>
+                    <div class="r-hstack">
+                        <img src="images/multi_target.jpg" width="30%" style="margin-right: 20%;">
+                        <img src="images/y.jpg">
+                    </div>
+                </section>
+
+                <section data-auto-animate data-auto-animate-unmatched="fade">
+                    <h2 class="r-fit-text">Adversarial Detection: Multi Untargeted Attack</h2>
+                    <p style="color: #CCC; font-size: 20px;">
+                        $$J_1(x, \delta, y_h) = max(\ \sigma(c) * \sigma(p_0) \ )$$
+                    </p>
+                    <p style="color: #CCC; font-size: 20px;">
+                        $$J_2(x, \delta, y_h) = \sigma(c) * \sigma(p_0)$$
+                    </p>
+                    <p style="font-size: 20px;">
+                        $$J_3(x, \delta, y_h) = \sigma(c) * \sum\sigma(p_i)$$
+                    </p>
+                    <pre data-id="code">
+                        <code class="python" data-trim data-line-numbers>
+                        # Multi Untargeted Attack
+                        loss = K.sigmoid(K.reshape(out, (-1, 8))[:, 4]) * K.sum(K.sigmoid(K.reshape(out, (-1, 8))[:, 5:]))
+
+                        grads = K.gradients(loss, self.model.input)
+                        </code></pre>
+                    <div class="r-hstack">
+                        <img src="images/multi_untarget.jpg" width="30%" style="margin-right: 20%;">
+                        <img src="images/y.jpg">
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="r-fit-text">Is Deep Learning secure for Robots?</h2>
+                </section>
+
+                <section>
+                    <h2>Thanks</h2>
+                    <div class="r-vstack">
+                        <p><a href="https://ros.wuhanstudio.uk/">https://orca.wuhanstudio.uk</a></p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <script src="plugin/math/math.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            Reveal.initialize({
+                center: true,
+                hash: true,
+                plugins: [ RevealHighlight, RevealMath, RevealMenu ],
+                mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                config: 'TeX-AMS_HTML-full',
+                // pass other options into `MathJax.Hub.Config()`
+                TeX: { Macros: { RR: "{\\bf R}" } },
+                menu: {
+                    hideMissingTitles: true,
+                },
+                // showNotes: true,
+            });
+        </script>
+    </body>
+</html>
